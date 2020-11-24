@@ -8,25 +8,21 @@
     {
         die ('Erreur : '.$erreur ->getMessage());
     }
-
-    function afficher_requet_select($marequete,$maBase)
+    $marequete = $maBase->query('SELECT * FROM Medecin');
+    function afficher_requet_select($marequete)
     {
-        $marequete = $maBase->query('SELECT * FROM Medecin');
-        $donnees = $marequete->fetch();
-        while ($donnees = $marequete->fetch())
+        while ($table = $marequete ->fetch())
         {
-?>
-<head>
-</head>
-<body>
-    <p>
-        Nom du docteur: <?php echo $donnees['Nom']; ?><br />
-        Prenom de ce docteur: <?php echo $donnees['Prenom'] ?><br />
-        Son numéro de série: <?php echo $donnees['Matricule'] ?><br />
-    </p>
-<?php
+            echo $table["Nom"]."".$table["Prenom"]."".$table["Matricule"];
         }
-        $marequete->closeCursor(); 
+        verif();
+    }
+
+    function verif()
+    {
+        if($table["Matricule"]=false)
+        {
+            echo "<div style 'color=red;'> Resultat introuvable </div>";
+        }
     }
 ?>
-</body>
