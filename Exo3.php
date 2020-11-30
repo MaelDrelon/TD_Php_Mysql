@@ -20,13 +20,14 @@
 	        }
 	        echo "L’enregistrement est ajouté ";
         }
-        
     }
+
     catch (Exception $erreur)
     {
         die ('Erreur : '.$erreur ->getMessage());
     }
 ?>
+
 <html>
 	<body>
 	    <form action="" method="post">
