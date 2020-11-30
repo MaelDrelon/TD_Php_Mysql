@@ -4,7 +4,7 @@
     {
         if(! $req)
 	    {
-	        die('impossible d’ajouter cet enregistrement : ');
+	        die('<p style="color:#FF0000";>impossible d’ajouter cet enregistrement :</p>');
 	    }
 	    echo "L’enregistrement est ajouté ";
     }
