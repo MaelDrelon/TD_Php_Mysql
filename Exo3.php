@@ -4,9 +4,9 @@
     {
         if(! $req)
 	    {
-	        die('<p style="color:#FF0000";>impossible d’ajouter cet enregistrement :</p>');
+	        die('<p style="color:#FF0000";>impossible d’ajouter cet enregistrement : vérifiez la matricule</p>');
 	    }
-	    echo "L’enregistrement est ajouté ";
+	    echo "<p style='color:#027C0D'>L’enregistrement est ajouté </p>";
     }
     try 
     {
