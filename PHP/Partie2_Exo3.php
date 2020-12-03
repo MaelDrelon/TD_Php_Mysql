@@ -1,3 +1,9 @@
+<?php
+    function moyenne($Valeurs){
+        $moyenne=($Valeurs[0]+$Valeurs[1]+$Valeurs[2])/3;
+        echo"$moyenne";
+    }
+?>
 <head>
 <link rel="stylesheet" href="../menu.css">
 </head>
@@ -20,30 +26,28 @@
                 </ul>
         </nav>
     </p>
-<?php
-    $Tableaux = array(array("Nom"=> "Drelon", "Prenom"=> "Mael", "MDP"=> "1234"),
-                      array("Nom"=> "Crepin", "Prenom"=> "Tom", "MDP"=> "5678"),
-                      array("Nom"=> "Pauchet", "Prenom"=> "Milo", "MDP"=> "9101")
-                    );
-
-
-
-        echo '<table border"1"><tr>';
-        for($i= 0;$i<3;$i++)
-        {
-            foreach($Tableaux[$i] as $Valeur )
-            echo '<td>'."<p>\n".$Valeur."\n</p>".'</td>';
-            echo '</tr><tr>';
-        }
-        echo '</tr></table>';
-
-
-
-
-      
-
-        highlight_file((__FILE__));
-?>
-
-
+    <div>
+        <table>
+            <form action="" method="post">
+                <tr>
+                    <th>Valeurs : </th>
+                    <td><input type="number" name="Valeur1" id="Valeur1"></td>
+                    <td><input type="number" name="Valeur2" id="Valeur2"></td>
+                    <td><input type="number" name="Valeur3" id="Valeur3"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" name="Calcul">Calcul</button></td>
+                </tr>  
+            </form> 
+        </table>   
+    </div>
+    <div class="bottom">
+        <?php
+            if(isset($_POST['Calcul'])){
+                moyenne(
+                    array($_POST['Valeur1'],$_POST['Valeur2'],$_POST['Valeur3'])
+                );
+            }
+        ?>
+    </div>
 </body>

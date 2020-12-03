@@ -1,17 +1,6 @@
-<?php 
-    function tableau()
-    {
-        echo "<table>
-                        <td>
-                            Exemple
-                        </td>
-              </table>";
-    }
-?>
-
 <head>
-    <link rel="stylesheet" href="CssExo1.css"> 
-    <link rel="stylesheet" href="../menu.css">
+<link rel="stylesheet" type="text/css" href="exo1.css"> 
+<link rel="stylesheet" href="../menu.css">
 </head>
 <body>
 <p>
@@ -32,11 +21,22 @@
                 </ul>
         </nav>
     </p>
-    <div>
-        <?php tableau(); ?>
-    </div>
+    <?php
+        $NombreAleatoire = rand ( 0 , 100 );
 
-    <div class=bas>
-        <?php tableau(); ?>
-    </div>
+
+        if($NombreAleatoire%2 == 1)
+        {
+            
+            echo '<div class="blue">'.$NombreAleatoire.' est impaire</div>';
+
+        }
+        else
+        {
+
+            echo '<div class="red">'.$NombreAleatoire. ' est pair</div>';
+
+        }
+        highlight_file((__FILE__));
+    ?>  
 </body>

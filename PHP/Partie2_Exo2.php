@@ -1,5 +1,32 @@
+<?php
+
+    function Tableau($Titre1,$Titre2,$Titre3) {
+        
+            ?><table>
+                <tr>
+                <?php echo"<th>$Titre1</th>";?>
+                    <td>Mael</td>
+                    <td>Drelon</td>
+                </tr>
+                <tr>
+                <?php echo"<th>$Titre2</th>";?>
+                    <td>Milo</td>
+                    <td>Pauchet</td>
+                </tr>
+                <tr>
+                <?php echo"<th>$Titre3</th>";?>
+                    <td>Tom</td>
+                    <td>Crepin</td>
+                </tr>
+            </table><?php
+    }
+?>
+
 <head>
-<link rel="stylesheet" href="../menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="../menu.css">
 </head>
 <body>
 <p>
@@ -20,27 +47,7 @@
                 </ul>
         </nav>
     </p>
-<?php
-    $Numbers = array('10', '53', '31', '84');
-    $Tableaux = array("Nom"=> "Drelon",
-                      "Prenom"=>"Mael",
-                      "MDP"=>"1234");
-
-    foreach ($Numbers as $Number) 
-    {
-        echo "$Number\n";
-    }
-
-    echo '<table border"1"><tr>';
-    for($i= 0;$i<1;$i++)
-    {
-        echo '<td>'."\n".$Tableaux['Nom']."\n".$Tableaux['Prenom']."\n".$Tableaux['MDP']."\n".'</td>';
-    }
-    echo '</tr></table>';
-
-    highlight_file((__FILE__));
-
-?>
-
-
+    <div>
+        <?php Tableau("Titre","Titre","Titre") ?>
+    </div> 
 </body>
