@@ -52,4 +52,10 @@
       <h1><?php echo $bienvenue?></h1>
       [ <a href="Deconnexion.php">Se déconnecter</a> ]
    </body>
+   <div>
+      <?php
+         highlight_file((__FILE__));
+      ?>
+   </div>
+   
 </html>

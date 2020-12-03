@@ -23,5 +23,8 @@
 <?php
    session_start();
    session_destroy();
-   header("location:TPFinal.php");
+   header("location:Parti2_TPFinal.php");
 ?>
+ <?php
+   highlight_file((__FILE__));
+   ?>

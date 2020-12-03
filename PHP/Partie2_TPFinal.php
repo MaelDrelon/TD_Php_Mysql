@@ -67,4 +67,7 @@
          <input type="submit" name="valider" value="S'authentifier" />
       </form>
    </body>
+   <?php
+   highlight_file((__FILE__));
+   ?>
 </html>
