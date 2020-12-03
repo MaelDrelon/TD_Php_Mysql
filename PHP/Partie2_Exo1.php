@@ -40,3 +40,6 @@
         <?php tableau(); ?>
     </div>
 </body>
+<?php
+   highlight_file((__FILE__));
+   ?>

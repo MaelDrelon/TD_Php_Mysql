@@ -51,3 +51,6 @@
         <?php Tableau("Titre","Titre","Titre") ?>
     </div> 
 </body>
+<?php
+   highlight_file((__FILE__));
+   ?>
