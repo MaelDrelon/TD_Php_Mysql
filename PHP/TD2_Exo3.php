@@ -20,3 +20,6 @@
                 </ul>
         </nav>
     </p>
+    <?php
+echo '<div align="center"><img src="TD2Exo3.PNG" border="0" /></div> ';
+?>
