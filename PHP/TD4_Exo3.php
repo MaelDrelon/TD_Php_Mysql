@@ -41,6 +41,7 @@
     {
         die ('Erreur : '.$erreur ->getMessage());
     }
+    
 ?>
 
 <html>
@@ -73,3 +74,6 @@
 	    </form>
 	</body>
 </html>
+<?php
+highlight_file((__FILE__));
+?>
