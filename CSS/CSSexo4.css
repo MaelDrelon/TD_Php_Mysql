@@ -1,0 +1,48 @@
+.top {
+    margin-top: auto;
+    height:50px;
+    width:100%;
+	background-color:#00CCFF;
+}
+.mid {
+    margin-left: auto;
+    height:800px;
+    width:100%;
+    background-color:#FFCC00;
+}
+.bot {
+    margin-bottom: auto;
+    height:50px;
+    width:100%;
+    background-color:#33FF99;
+    clear:both;
+}
+.menuh {
+    float:left;
+    margin-left: auto;
+    width:100px;
+    height:400px;
+    background-color:#4cd60c;
+}
+.menub {
+    margin-top: 400px;
+    position: absolute;
+    float:left;
+    margin-left: auto;
+    width:100px;
+    height:400px;
+    background-color:#c542e6;
+}
+.New{
+    position: absolute;
+    background-color: #FF0000;
+    margin-left: 89%;
+    width: 200px;
+    height: 200px;
+}
+.rouge{
+    color:red;
+}
+.bleu{
+    color:blue;
+}

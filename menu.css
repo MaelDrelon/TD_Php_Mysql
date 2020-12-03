@@ -1,0 +1,60 @@
+html {     /*Le Fond d'écran de la page en question et les dégradages*/   
+    height:100%;
+    width:100%;
+    margin:auto;
+    background-image: linear-gradient(to right top, #bdb434da 0%, #46f7fd 100%);
+    background-size: cover;
+    /*A partir de la, ces code permettent au fond d'écran de ne pas loop a la fin*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67,06vw; 
+    overflow: scroll;
+}
+  
+  nav {      /*Ouverture de la balise menu + début du dégradage*/ 
+    max-width: 960px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 0px 0;
+}
+  
+  nav ul {    /*Affichage d'un rectangle dégradé pouvant afficher les différents menu*/ 
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+  
+  nav ul li {     /*Ouverture de menu*/ 
+    display: inline-block;
+}
+  
+  nav ul li a {   /*La couleur du text à l'intérieur du menu*/ 
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+  
+  nav ul li a:hover {     /*Quand la sourie est sur une option, le bouton changera de forme*/ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+.jeu
+{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+    
+  

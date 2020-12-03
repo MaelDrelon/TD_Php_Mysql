@@ -1,0 +1,16 @@
+div#top {
+	height:50px;
+	background-color:#00CCFF;
+	}
+div#mid {
+	height:800px;
+	background-color:#FFCC00;
+	}
+div#bot {
+	height:50px;
+	background-color:#33FF99;
+	}
+div#color{
+	font-size: 20px;
+	color:red;
+}

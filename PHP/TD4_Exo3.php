@@ -44,7 +44,28 @@
 ?>
 
 <html>
+    <head>
+    <link rel="stylesheet" href="../menu.css">
+    </head>
 	<body>
+    <p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../HTML.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../CSS.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../PHP.html">PHP</a>
+                </li>
+                <li>
+                    <a href="">Empty</a>
+                </li>
+                </ul>
+        </nav>
+    </p>
 	    <form action="" method="post">
 	        Nom: <input type="text" name="Nom" />
 	        Prénom: <input type="text" name="Prenom" />

@@ -1,0 +1,35 @@
+.top {
+    margin-top: auto;
+    height:50px;
+    width:100%;
+	background-color:#00CCFF;
+}
+.mid {
+    margin-left: auto;
+    height:800px;
+    width:100%;
+    background-color:#FFCC00;
+}
+.bot {
+    margin-bottom: auto;
+    height:50px;
+    width:100%;
+    background-color:#33FF99;
+    clear:both;
+}
+.menu {
+    float:left;
+    margin-right: auto;
+    width:10%;
+    height:800px;
+    background-color:#FF6699;
+    
+}
+.rouge{
+    font-size: 30px;
+    color:red;
+}
+.bleu{
+    font-size: 20px;
+    color:blue;
+}
