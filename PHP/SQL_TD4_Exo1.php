@@ -33,9 +33,9 @@
 <body>
 
     <p>
-    Nom du patient: <?php echo $donnees['Nom']; ?><br />
-    Prenom de ce patient: <?php echo $donnees['Prenom'] ?><br />
-    Son numéro de série: <?php echo $donnees['NumSS'] ?><br />
+    <p>Nom du patient: <?php echo $donnees['Nom']; ?></p>
+    <p>Prenom de ce patient: <?php echo $donnees['Prenom'] ?></p>
+    <p>Son numéro de série: <?php echo $donnees['NumSS'] ?></p>
     </p>
 <?php
         }
